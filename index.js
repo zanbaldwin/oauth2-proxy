@@ -3,6 +3,11 @@ const url = require('url');
 const config = require('./config.js');
 const utils = require('./utils.js');
 
+// This in-memory revocation list would be better backed by something like Redis,
+// but this is a proof-of-concept so I'm (a) not going to implement that, or
+// (b) do any kind of research to work out the overhead of such calls or whether
+// there's a better way of having a central repository of revoked IDs that
+// multiple instances of this script could check.
 /** @var Object<string>[integer] $revocationList */
 let revocationList = {};
 // Automatic Garbage Collection: delete unnecessary revocation targets every 60 seconds.
