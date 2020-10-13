@@ -22,8 +22,8 @@ module.exports = {
         lifetime: 60 * 60,
         issuer: 'SmarterQueue',
         key: {
-            private: '/data/key',
-            public: '/data/key.pub',
+            private: './var/key',
+            public: './var/key.pub',
         },
     },
 };
