@@ -1,0 +1,13 @@
+{
+  "name": "oauth2-proxy",
+  "version": "0.1.0",
+  "description": "OAuth2 Proxy in Javascript",
+  "main": "index.js",
+  "repository": "git://github.com/zanbaldwin/oauth2-proxy.git",
+  "author": "Zan Baldwin <hello@zanbaldwin.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "paseto": "^1.0.7"
+  }
+}
